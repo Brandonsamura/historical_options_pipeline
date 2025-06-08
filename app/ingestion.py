@@ -1,5 +1,5 @@
 import httpx
-from .config import settings
+from app.config import settings
 
 async def fetch_options_data(symbol: str, target_date: str):
     url = "https://www.alphavantage.co/query"
