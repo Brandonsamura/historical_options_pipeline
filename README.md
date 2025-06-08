@@ -40,6 +40,9 @@ DATABASE_URL=postgresql+asyncpg://user:pass@localhost/dbname
 ## 2. Install dependencies:
 
 ```python
+python --version
+# Python 3.13.4
+
 poetry install
 ```
 

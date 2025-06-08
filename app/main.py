@@ -8,9 +8,8 @@ from sqlalchemy import select
 
 def main():
     print("Running historical options pipeline...")
-
-if __name__ == "__main__":
-    main()
+    import uvicorn
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
 
 app = FastAPI()
 

@@ -1,3 +1,4 @@
+# pyproject.toml
 [tool.poetry]
 name = "historical_options_pipeline"
 version = "0.1.0"
@@ -5,13 +6,7 @@ description = "historical_options_pipeline"
 authors = ["Tim Siwula <siwulactim@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-
-# this disables project as a library/package.
-# only dependency + script management.
-package-mode = false
-
-# this enables the project as a library/package.
-# packages = [{ include = "app" }]
+packages = [{ include = "app" }]
 
 # Scripts section - run with `poetry run start`
 [tool.poetry.scripts]
