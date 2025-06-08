@@ -1,6 +1,15 @@
 # historical_options_pipeline
 
+![Python Version](https://img.shields.io/badge/python-%3E%3D3.13-blue)
 
+A high-performance pipeline for ingesting historical options data and exposing it via a FastAPI interface using PostgreSQL.
+
+## Features
+- Async ingestion with httpx
+- PostgreSQL storage via SQLAlchemy
+- Exposed APIs via FastAPI
+
+## Overview
 This project is a Python application that fetches historical options data from the Alpha Vantage API, processes it, and stores it in a PostgreSQL database.
 
 It is designed to run as a background task, fetching data at regular intervals. 
