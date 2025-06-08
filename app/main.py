@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from .database import init_db
-from .scheduler import start_scheduler
-from .schemas import OptionContractSchema
-from .models import OptionContract
-from .database import SessionLocal
+from database import init_db
+from scheduler import start_scheduler
+from schemas import OptionContractSchema
+from models import OptionContract
+from database import SessionLocal
 from sqlalchemy import select
 
 def main():

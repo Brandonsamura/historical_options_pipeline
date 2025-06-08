@@ -1,9 +1,15 @@
 # historical_options_pipeline
 
-Example payload here: https://www.alphavantage.co/query?function=HISTORICAL_OPTIONS&symbol=IBM&apikey=demo
 
-This project is a Python application that fetches historical options data from the Alpha Vantage API, processes it, and stores it in a PostgreSQL database. 
+This project is a Python application that fetches historical options data from the Alpha Vantage API, processes it, and stores it in a PostgreSQL database.
+
+It is designed to run as a background task, fetching data at regular intervals. 
+
+The application is structured to be modular, with separate modules for fetching data, processing it, and storing it in the database.
+
 It uses FastAPI for the web framework and SQLAlchemy for database interactions.
+
+Example payload can be [viewed here.](https://www.alphavantage.co/query?function=HISTORICAL_OPTIONS&symbol=IBM&apikey=demo)
 
 
 ## 1. Create a .env file:
